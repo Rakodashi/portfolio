@@ -1,0 +1,310 @@
+@media screen and (max-width: 1275px) {
+    header {
+        height: 3.5rem !important;
+        .menu-icon {
+            display: block !important;
+
+            &__line {
+                animation: closedMid 0.8s backwards;
+                animation-direction: reverse;
+
+                &::before {
+                    animation: closedTop 0.8s backwards;
+                    animation-direction: reverse;
+                }
+                &::after {
+                    animation: closedBtm 0.8s backwards;
+                    animation-direction: reverse;
+                }
+            }
+        }
+        .hamburgerMenu {
+            position: absolute !important;
+            // top: 0;
+            // left: 0;
+            opacity: 1 !important;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 10rem 0;
+            width: 100vw;
+            height: 100vh;
+            font-size: 2rem;
+            color: #fff;
+            background: #7f4c9c;
+            transition:
+            opacity .8s .5s,
+            clip-path 1s .5s;
+            clip-path: circle(200px at top right);
+
+            .hamburgerBtn {
+                opacity: 1 !important;
+                transform: translateX(100%);
+                width: 100%;
+                text-align: center;
+    
+                a {
+                    display: block;
+                    padding: 2rem 0;
+                }
+            }
+        }
+// maybe change .hamburgerBtn for .hamburgerMenu
+        .menu-btn:checked ~ .hamburgerBtn {
+            opacity: 1 !important;
+            clip-path: circle(100% at center);
+
+            .hamburgerBtn {
+                opacity: 1;
+                transform: translateX(0);
+                transition: 
+                    opacity .4s ease-in-out,
+                    transform .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                
+                &:nth-of-type(1) {
+                    transition-delay: .1s;
+                }
+                &:nth-of-type(2) {
+                    transition-delay: .2s;
+                }
+                &:nth-of-type(3) {
+                    transition-delay: .3s;
+                }
+                &:nth-of-type(4) {
+                    transition-delay: .4s;
+                }
+                &:nth-of-type(5) {
+                    transition-delay: .5s;
+                }
+                &:nth-of-type(6) {
+                    transition-delay: .6s;
+                }
+                &:nth-of-type(7) {
+                    transition-delay: .7s;
+                }
+                &:nth-of-type(8) {
+                    transition-delay: .8s;
+                }
+                &:nth-of-type(9) {
+                    transition-delay: .8s;
+                }
+            }
+        }
+
+        .menu-btn:checked ~ .menu-icon {
+            border-radius: 50%;
+            animation: pulse 1s;
+
+            .menu-icon__line {
+                animation: openMid 0.8s forwards;
+
+                &::before {
+                    animation: openTop 0.8s forwards;
+                }
+                &::after {
+                    animation: openBtm 0.8s forwards;
+                }
+            }
+        }
+
+
+
+// Hides fullwidth buttons to replace them for the hamburger menu ones
+        #centerBtns, #rightBtns {
+            display: none;
+        }
+
+        & #homeBtn {
+            height: 3.1rem !important;
+        
+            h1 {
+                // margin: auto auto auto 1vw;
+                font-size: 2.8rem !important;
+            }
+                
+            & .logo {
+                width: 70px !important;
+                // height: 90px;
+                // max-width: 2vw;
+            }
+        }
+
+        // & #homeBtn .logo {
+        //     min-width: 8vw !important;
+        //     min-width: 4vw !important;
+        // }
+
+
+
+        // min-height: 2vw !important;
+        // & #homeBtn {
+        //     h1 {
+        //         font-size: 1rem !important;
+        //     }
+
+        //     &.home {
+        //         width: 40%;
+        //     }
+
+        //     & .profile-pic {
+        //         display: flex;
+        //         width: 5.6rem;
+        //     }
+
+            // h1 {
+            //     margin: auto auto auto 1rem;
+            //     font-size: 2vw;
+            // }
+
+            // & .profile-pic {
+            //     min-width: 23%;
+            // }
+        // }
+    }
+
+    body {
+            section {
+                &#about{
+                    #main {
+                        display: flex !important;
+                        flex-direction: column !important;
+                        width: 90%;
+
+                        &.main-titles, h1, h2 {
+                            justify-content: center;
+                            margin: .5rem;
+                            width: 85vw;
+                            }
+
+                        #profile {
+                            width: 16vw !important;
+                            }
+                    }
+                    h3 {
+                        justify-content: center;
+                    }
+                }
+
+            .cardText  {
+                display: flex !important;
+                flex-direction: column !important;
+
+                img {
+                    max-width: 70vw !important;
+                }
+            }
+            .textCard {
+                display: flex!important;
+                flex-direction: column-reverse!important;
+
+                img {
+                    max-width: 70vw !important;
+                }
+            }
+
+            .cardText, .textCard {
+                margin: 2rem 0 2rem 0 !important;
+                .projBtns {
+                    .lBtn {
+                        height: 2rem !important;
+                        font-size: .8rem !important;
+                    }
+                    .rBtn {
+                        height: 2rem !important;
+                        font-size: .7rem !important;
+                    }
+                }
+            }
+        }
+        input,
+        textarea {
+            min-width: 80%;
+        }
+
+        i {
+            font-size: 3vw!important;
+            padding: 0!important;
+        }
+        h1 {
+            font-size: 4vw!important;
+        }
+        h2 {
+            font-size: 3vw!important;
+        }
+        h3 {
+            font-size: 2vw!important;
+        }
+        p {
+            font-size: 2vw!important;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        & #homeBtn {
+            height: 3.1rem !important;
+        
+            h1 {
+                font-size: 1.5rem !important;
+            }
+                
+            & .logo {
+                width: 50px !important;
+            }
+        }
+    }
+    body {
+        section {
+            &#about{
+                #main {
+                    flex-direction: column !important;
+                    width: 95%;
+
+                    &.main-titles, h1, h2 {
+                        justify-content: center;
+                        align-items: center;
+                        }
+                }
+
+                h1 {
+                    font-size: 6vw!important;
+                }
+                h2 {
+                    font-size: 3vw!important;
+                }
+                h3 {
+                    font-size: 2vw!important;
+                    justify-content: center;
+                }
+                p {
+                    font-size: 2vw!important;
+                }
+
+            }
+            &#projects, &#contact {
+                h1 {
+                    font-size: 7vw !important;
+                }
+            }
+        }
+        input,
+        textarea {
+            padding: .5rem !important;
+
+            &::placeholder {
+                font-size: 1rem !important;
+            }
+        }
+        textarea {
+            height: 8rem !important;
+        }
+
+        button {
+            font-size: 1rem !important;
+            width: 6rem !important;
+            padding: 10px !important;
+        }
+    }
+
+}

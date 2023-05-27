@@ -1,0 +1,67 @@
+.light {
+    background: radial-gradient(ellipse at bottom, #5c9ee9 0%, #3b41a0 100%);
+    
+    header {
+        background-color: #8c3de6;
+        
+        & button, #changeTheme, #changeLang {
+            border: 1px solid #b19fe6;
+            &:hover {
+                background-color: #82d677;
+                border: 1px solid #82d677;
+            }
+        }
+    
+        a {
+            &:hover {
+                color: #82d677;
+            }
+        }
+
+    }
+
+    section {
+        background-color: #69c1d12a;
+    }
+
+    input,
+    textarea {
+        padding: 1.4rem;
+        background: #1b2735;
+        color: white;
+        border: 1px solid #3b41a0;
+    }
+    
+    button {
+        background: #8c3de6;
+        // color: white;
+
+        &:hover {
+            background-color: #82d677;
+        }
+    }
+    footer {
+        background: #3b41a0;
+        color: #fff;
+    }
+
+    // extras? > #91f5c6 green
+    //           #c696e3 purple
+
+    // extras > green: #98fa8c;
+    //          pink: #df81e2;
+    //          orange: #ce8411;
+    //          purple: #80f6f6;
+    //          main purple: #673de6;
+    //     >    dark purple: #2d2b55;
+    //          darker purple: #1f1f41;
+    //          yellow: #d2c608;
+    //          bg grey: #1b2735;
+    //          bg purple: #673de6;
+                // #673de6;
+                // grey: #222;
+}
+
+// .lang {
+
+// }
