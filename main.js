@@ -3,22 +3,38 @@ function changeTheme() {
     body.classList.toggle('light');
 };
 
-// Language Change Button
-function changeLang() {
-  body.classList.toggle('lang');
-};
 
-// or
 
-function toggleLang(language) {
-  let description = document.getElementById("description");
-  if (language === "Portuguese") {
-    description.innerHTML = "Show Portuguese Text";
-  }
-  else {
-    description.innerHTML = "Show English Text";
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // Language Change Button
+// function changeLang() {
+//   body.classList.toggle('lang');
+// };
+
+// // or
+
+// function toggleLang(language) {
+//   let description = document.getElementById("description");
+//   if (language === "Portuguese") {
+//     description.innerHTML = "Show Portuguese Text";
+//   }
+//   else {
+//     description.innerHTML = "Show English Text";
+//   }
+// }
 
 // //  Language Change button's scramble animation
 // window.onload = function() {
