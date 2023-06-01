@@ -440,7 +440,7 @@ body header ul {
 }
 body header ul#centerBtns {
   margin: auto;
-  padding: 0;
+  padding: 0 0 0 5%;
 }
 body header ul#rightBtns {
   margin: 0 1% 0 0;
