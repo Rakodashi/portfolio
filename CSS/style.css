@@ -139,11 +139,11 @@
   }
   body section .cardText .projBtns .lBtn, body section .textCard .projBtns .lBtn {
     height: 2rem !important;
-    font-size: 0.8rem !important;
+    font-size: 1rem !important;
   }
   body section .cardText .projBtns .rBtn, body section .textCard .projBtns .rBtn {
     height: 2rem !important;
-    font-size: 0.7rem !important;
+    font-size: 1rem !important;
   }
   body input,
   body textarea {
@@ -200,20 +200,31 @@
   body section#projects h1, body section#contact h1 {
     font-size: 7vw !important;
   }
+  body section .cardText, body section .textCard {
+    margin: 2rem 0 2rem 0 !important;
+  }
+  body section .cardText .projBtns .lBtn, body section .textCard .projBtns .lBtn {
+    height: 1rem !important;
+    font-size: 0.5rem !important;
+  }
+  body section .cardText .projBtns .rBtn, body section .textCard .projBtns .rBtn {
+    height: 1rem !important;
+    font-size: 0.5rem !important;
+  }
   body input,
   body textarea {
     padding: 0.5rem !important;
   }
   body input::placeholder,
   body textarea::placeholder {
-    font-size: 1rem !important;
+    font-size: 0.5rem !important;
   }
   body textarea {
     height: 8rem !important;
   }
   body button {
-    font-size: 1rem !important;
-    width: 6rem !important;
+    font-size: 0.5rem !important;
+    width: 5rem !important;
     padding: 10px !important;
   }
 }

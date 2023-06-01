@@ -207,11 +207,11 @@
                 .projBtns {
                     .lBtn {
                         height: 2rem !important;
-                        font-size: .8rem !important;
+                        font-size: 1rem !important;
                     }
                     .rBtn {
                         height: 2rem !important;
-                        font-size: .7rem !important;
+                        font-size: 1rem !important;
                     }
                 }
             }
@@ -287,13 +287,27 @@
                     font-size: 7vw !important;
                 }
             }
+
+            .cardText, .textCard {
+                margin: 2rem 0 2rem 0 !important;
+                .projBtns {
+                    .lBtn {
+                        height: 1rem !important;
+                        font-size: .5rem !important;
+                    }
+                    .rBtn {
+                        height: 1rem !important;
+                        font-size: .5rem !important;
+                    }
+                }
+            }
         }
         input,
         textarea {
             padding: .5rem !important;
 
             &::placeholder {
-                font-size: 1rem !important;
+                font-size: .5rem !important;
             }
         }
         textarea {
@@ -301,8 +315,8 @@
         }
 
         button {
-            font-size: 1rem !important;
-            width: 6rem !important;
+            font-size: .5rem !important;
+            width: 5rem !important;
             padding: 10px !important;
         }
     }
