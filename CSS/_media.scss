@@ -250,14 +250,14 @@
                     font-size: 5vw!important;
                 }
                 h2 {
-                    font-size: 3vw!important;
+                    font-size: 3.5vw!important;
                 }
                 h3 {
-                    font-size: 2vw!important;
+                    font-size: 3vw!important;
                     justify-content: center;
                 }
                 p {
-                    font-size: 2vw!important;
+                    font-size: 3vw!important;
                 }
 
             }
@@ -271,11 +271,11 @@
                 margin: 2rem 0 2rem 0 !important;
                 .projBtns {
                     .lBtn {
-                        height: 1rem !important;
+                        height: 1.5rem !important;
                         font-size: .5rem !important;
                     }
                     .rBtn {
-                        height: 1rem !important;
+                        height: 1.5rem !important;
                         font-size: .5rem !important;
                     }
                 }
@@ -286,7 +286,7 @@
             padding: .5rem !important;
 
             &::placeholder {
-                font-size: .5rem !important;
+                font-size: 1rem !important;
             }
         }
         textarea {
@@ -294,8 +294,8 @@
         }
 
         button {
-            font-size: .5rem !important;
-            width: 5rem !important;
+            font-size: 1rem !important;
+            width: 6rem !important;
             padding: 10px !important;
         }
     }

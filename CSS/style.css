@@ -150,14 +150,14 @@
     font-size: 5vw !important;
   }
   body section#about h2 {
-    font-size: 3vw !important;
+    font-size: 3.5vw !important;
   }
   body section#about h3 {
-    font-size: 2vw !important;
+    font-size: 3vw !important;
     justify-content: center;
   }
   body section#about p {
-    font-size: 2vw !important;
+    font-size: 3vw !important;
   }
   body section#projects h1, body section#contact h1 {
     font-size: 7vw !important;
@@ -166,11 +166,11 @@
     margin: 2rem 0 2rem 0 !important;
   }
   body section .cardText .projBtns .lBtn, body section .textCard .projBtns .lBtn {
-    height: 1rem !important;
+    height: 1.5rem !important;
     font-size: 0.5rem !important;
   }
   body section .cardText .projBtns .rBtn, body section .textCard .projBtns .rBtn {
-    height: 1rem !important;
+    height: 1.5rem !important;
     font-size: 0.5rem !important;
   }
   body input,
@@ -179,14 +179,14 @@
   }
   body input::placeholder,
   body textarea::placeholder {
-    font-size: 0.5rem !important;
+    font-size: 1rem !important;
   }
   body textarea {
     height: 8rem !important;
   }
   body button {
-    font-size: 0.5rem !important;
-    width: 5rem !important;
+    font-size: 1rem !important;
+    width: 6rem !important;
     padding: 10px !important;
   }
 }
