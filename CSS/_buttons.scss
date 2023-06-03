@@ -26,6 +26,19 @@
 
     section {
         background-color: #69c1d12a;
+
+        .cardText, .textCard {
+            .projBtns .lBtn, .projBtns .rBtn {
+                background-color: #8c3de6;
+
+                &:hover {
+                    background-color: #82d677;
+                }
+                &:active {
+                    background-color: #82d677;
+                }
+            }
+        }
     }
 
     input,

@@ -6,13 +6,14 @@ function changeTheme() {
 
 // nav animation for hamburger menu
 
-const navMenu = document.getElementsByClassName('.hamburgerMenu'),
-toggleMenu = document.getElementById('menu-btn')
-closeMenu = document.getElementById('menu-btn')
+// const navMenu = document.getElementsById('.hamburgerMenu'),
+// toggleMenu = document.getElementById('menu-btn', 'menu-icon')
 
-toggleMenu.addEventListener('click', () => {
-    navMenu.classList.toggle('show')
-})
-closeMenu.addEventListener('click', () => {
-    navMenu.classList.remove('show')
-})
+// toggleMenu.addEventListener('click', () => {
+//     navMenu.classList.toggle('show')
+// })
+
+
+function toggleMenu() {
+    body.classList.toggle('show');
+};

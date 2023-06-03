@@ -20,24 +20,24 @@
   }
   header .hamburgerMenu {
     display: flex !important;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: -100%;
     opacity: 1;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding: 10rem 0;
+    padding: 3rem 0 3rem 1rem;
     width: 60%;
     height: 100vh;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     color: #fff;
     background: #7f4c9c;
     transition: background 0.2s ease-in-out;
     border-radius: 0 0 0 40%;
     transition: 0.5s;
   }
-  header .show .hamburgerMenu {
+  header .hamburgerMenu .show {
     right: 0;
   }
   header .menu-btn:checked ~ .menu-icon {
@@ -136,7 +136,7 @@
     font-size: 1.5rem !important;
   }
   header #homeBtn .logo {
-    width: 50px !important;
+    width: 65px !important;
   }
   body section#about #main {
     flex-direction: column !important;
@@ -145,6 +145,9 @@
   body section#about #main.main-titles, body section#about #main h1, body section#about #main h2 {
     justify-content: center;
     align-items: center;
+  }
+  body section#about #profile {
+    margin: 2% 0;
   }
   body section#about h1 {
     font-size: 5vw !important;
@@ -211,6 +214,15 @@
 }
 .light section {
   background-color: rgba(105, 193, 209, 0.1647058824);
+}
+.light section .cardText .projBtns .lBtn, .light section .cardText .projBtns .rBtn, .light section .textCard .projBtns .lBtn, .light section .textCard .projBtns .rBtn {
+  background-color: #8c3de6;
+}
+.light section .cardText .projBtns .lBtn:hover, .light section .cardText .projBtns .rBtn:hover, .light section .textCard .projBtns .lBtn:hover, .light section .textCard .projBtns .rBtn:hover {
+  background-color: #82d677;
+}
+.light section .cardText .projBtns .lBtn:active, .light section .cardText .projBtns .rBtn:active, .light section .textCard .projBtns .lBtn:active, .light section .textCard .projBtns .rBtn:active {
+  background-color: #82d677;
 }
 .light input,
 .light textarea {
@@ -602,16 +614,48 @@ body section .cardText .projBtns, body section .textCard .projBtns {
   justify-content: center;
 }
 body section .cardText .projBtns .lBtn, body section .textCard .projBtns .lBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 30px 0 0 30px;
-  margin: 0.5rem 0.1rem 0 0;
+  margin: 0 0.1rem 0 0;
   width: 40%;
   text-transform: uppercase;
+  background-color: #7f4c9c;
+  padding: 0.6rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  text-decoration: none;
+  color: white;
+}
+body section .cardText .projBtns .lBtn:hover, body section .textCard .projBtns .lBtn:hover {
+  background-color: #dea7ff;
+}
+body section .cardText .projBtns .lBtn:active, body section .textCard .projBtns .lBtn:active {
+  background-color: #dea7ff;
 }
 body section .cardText .projBtns .rBtn, body section .textCard .projBtns .rBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 0 30px 30px 0;
-  margin: 0.5rem 0 0 0.1rem;
+  margin: 0 0 0 0.1rem;
   width: 40%;
   text-transform: uppercase;
+  background-color: #7f4c9c;
+  padding: 0.6rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  text-decoration: none;
+  color: white;
+}
+body section .cardText .projBtns .rBtn:hover, body section .textCard .projBtns .rBtn:hover {
+  background-color: #dea7ff;
+}
+body section .cardText .projBtns .rBtn:active, body section .textCard .projBtns .rBtn:active {
+  background-color: #dea7ff;
 }
 body section .cardText .cardInfo, body section .textCard .cardInfo {
   padding: 1rem;
