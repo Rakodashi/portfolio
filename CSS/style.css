@@ -27,8 +27,8 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding: 3rem 0 3rem 1rem;
-    width: 60%;
+    padding: 5rem 0 5rem 1rem;
+    width: 40%;
     height: 100vh;
     font-size: 1.6rem;
     color: #fff;
@@ -37,12 +37,8 @@
     border-radius: 0 0 0 40%;
     transition: 0.5s;
   }
-  header .hamburgerMenu .show {
-    right: 0;
-  }
   header .menu-btn:checked ~ .menu-icon {
     border-radius: 50%;
-    animation: pulse 1s;
   }
   header .menu-btn:checked ~ .menu-icon .menu-icon__line {
     animation: openMid 0.5s forwards;
@@ -113,7 +109,7 @@
   }
   body i {
     font-size: 3vw !important;
-    padding: 0 !important;
+    padding: 0.5vw !important;
   }
   body h1 {
     font-size: 4vw !important;
@@ -138,6 +134,9 @@
   header #homeBtn .logo {
     width: 65px !important;
   }
+  header .hamburgerMenu {
+    width: 60%;
+  }
   body section#about #main {
     flex-direction: column !important;
     width: 95%;
@@ -161,6 +160,10 @@
   }
   body section#about p {
     font-size: 3vw !important;
+  }
+  body section#about i {
+    font-size: 4vw !important;
+    padding: 0 !important;
   }
   body section#projects h1, body section#contact h1 {
     font-size: 7vw !important;
@@ -240,6 +243,10 @@
 .light footer {
   background: #3b41a0;
   color: #fff;
+}
+
+.show .hamburgerMenu {
+  right: 0;
 }
 
 #stars {

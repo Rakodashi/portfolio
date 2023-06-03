@@ -8,8 +8,6 @@
     font-family: 'prompt', sans-serif;
     place-self: center;
     scroll-behavior: smooth;
-    
-    // outline: 1px solid red;
 }
 
 body {
@@ -108,7 +106,7 @@ body {
             cursor: pointer;
             z-index: 2;
             margin: 0 1% 0 auto;
-            display: none; //activate and deactivate it
+            display: none; //activate and deactivate it manually
 
             &__line {
                 display: block;
@@ -161,8 +159,7 @@ body {
                  width: 80%;
              }
         }
-        
-            
+           
         #main {
             display: flex;
             flex-direction: row;
@@ -174,7 +171,6 @@ body {
                 margin: .5rem;
             }   
         }
-
         
         #profile {
             width: 10vw;
@@ -324,7 +320,6 @@ body {
                 margin: 1rem;
             }
         }
-    
 
     form {
         width: 100%;

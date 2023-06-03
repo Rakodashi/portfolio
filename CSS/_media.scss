@@ -23,13 +23,12 @@
             position: fixed;
             top: 0;
             right: -100%;
-            // right: 0;
             opacity: 1;
             flex-direction: column;
             justify-content: space-evenly;
             align-items: center;
-            padding: 3rem 0 3rem 1rem;
-            width: 60%;
+            padding: 5rem 0 5rem 1rem;
+            width: 40%;
             height: 100vh;
             font-size: 1.6rem;
             color: #fff;
@@ -37,87 +36,12 @@
             transition: background 0.2s ease-in-out;
             border-radius: 0 0 0 40%;
             transition: 0.5s;
-
-
-
-
-            // transition:
-            // opacity .8s .5s;
-            // clip-path 1s .5s;
-            // clip-path: circle(200px);
-
-            // .hamburgerBtn {
-            //     opacity: 0;
-            //     transform: translateX(100%);
-            //     width: 100%;
-            //     text-align: center;
-    
-            //     a {
-            //         display: block;
-            //         padding: 2rem 0;
-            //     }
-            // }
         }
-        
-        // .show {
-        // }
-        .hamburgerMenu .show{
-            right: 0;
-        }
-        // .menu__toggle {
-        //     display: inline;
-        // }
-        // menu_close {
-        //     position: absolute;
-        //     right: 24px;
-        //     display: block;
-        // }
 
-// maybe change .hamburgerBtn for .hamburgerMenu
-        // .menu-btn:checked ~ .hamburgerMenu {
-        //     opacity: 1 !important;
-        //     clip-path: circle(100% at center);
-
-            // .hamburgerBtn {
-            //     opacity: 1;
-            //     transform: translateX(0);
-            //     transition: 
-                    // opacity .4s ease-in-out,
-        //             transform .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-                
-        //         &:nth-of-type(1) {
-        //             transition-delay: .1s;
-        //         }
-        //         &:nth-of-type(2) {
-        //             transition-delay: .2s;
-        //         }
-        //         &:nth-of-type(3) {
-        //             transition-delay: .3s;
-        //         }
-        //         &:nth-of-type(4) {
-        //             transition-delay: .4s;
-        //         }
-        //         &:nth-of-type(5) {
-        //             transition-delay: .5s;
-        //         }
-        //         &:nth-of-type(6) {
-        //             transition-delay: .6s;
-        //         }
-        //         &:nth-of-type(7) {
-        //             transition-delay: .7s;
-        //         }
-        //         &:nth-of-type(8) {
-        //             transition-delay: .8s;
-        //         }
-        //         &:nth-of-type(9) {
-        //             transition-delay: .8s;
-        //         }
-        //     }
-        // }
-
+        // When hamburger menu icon is clicked
         .menu-btn:checked ~ .menu-icon {
             border-radius: 50%;
-            animation: pulse 1s;
+            // animation: pulse 1s;
 
             .menu-icon__line {
                 animation: openMid 0.5s forwards;
@@ -131,8 +55,6 @@
             }
         }
 
-
-
 // Hides fullwidth buttons to replace them for the hamburger menu ones
         #centerBtns, #rightBtns {
             display: none;
@@ -143,14 +65,11 @@
             z-index: 2;
         
             h1 {
-                // margin: auto auto auto 1vw;
                 font-size: 2.8rem !important;
             }
                 
             & .logo {
                 width: 70px !important;
-                // height: 90px;
-                // max-width: 2vw;
             }
         }
     }
@@ -216,7 +135,7 @@
 
         i {
             font-size: 3vw!important;
-            padding: 0!important;
+            padding: .5vw!important;
         }
         h1 {
             font-size: 4vw!important;
@@ -245,6 +164,9 @@
             & .logo {
                 width: 65px !important;
             }
+        }
+        .hamburgerMenu {
+            width: 60%;
         }
     }
     body {
@@ -276,6 +198,10 @@
                 }
                 p {
                     font-size: 3vw!important;
+                }
+                i {
+                    font-size: 4vw !important;
+                    padding: 0 !important;
                 }
 
             }
