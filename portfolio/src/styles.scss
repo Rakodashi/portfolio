@@ -185,8 +185,9 @@ body {
          }
         i {
             font-size: 3vw;
+            // size: 3vw;
             margin: 2rem 0 1rem 0;
-            padding: .4rem;
+            padding: .6rem;
             transition: color 0.1s ease-in-out;
 
             &.devicon-git-plain:hover {
