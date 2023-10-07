@@ -8,12 +8,12 @@ import Footer from './components/Footer';
 function App() {
   return (
     <body id="body">
-      <Header></Header>
-      <StarsBG></StarsBG>
-      <About></About>
-      <Projects></Projects>
-      <Contact></Contact>
-      <Footer></Footer>
+      <Header />
+      <StarsBG />
+      <About />
+      <Projects />
+      <Contact />
+      <Footer />
     </body>
   );
 }

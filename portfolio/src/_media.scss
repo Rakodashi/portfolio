@@ -41,7 +41,7 @@
         // When hamburger menu icon is clicked
         .menu-btn:checked ~ .menu-icon {
             border-radius: 50%;
-            // animation: pulse 1s;
+            // animation: pulse .5s;
 
             .menu-icon__line {
                 animation: openMid 0.5s forwards;
