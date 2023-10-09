@@ -107,8 +107,8 @@
                 }
             }
             .textCard {
-                display: flex!important;
-                flex-direction: column-reverse!important;
+                display: flex !important;
+                flex-direction: column-reverse !important;
 
                 img {
                     max-width: 70vw !important;
@@ -135,20 +135,20 @@
         }
 
         i {
-            font-size: 3.1vw!important;
-            padding: 0 .9vw!important;
+            font-size: 3.1vw !important;
+            padding: 0 .9vw !important;
         }
         h1 {
-            font-size: 4vw!important;
+            font-size: 4vw !important;
         }
         h2 {
-            font-size: 3vw!important;
+            font-size: 3vw !important;
         }
         h3 {
-            font-size: 2vw!important;
+            font-size: 2vw !important;
         }
         p {
-            font-size: 2vw!important;
+            font-size: 2vw !important;
         }
     }
 }
@@ -186,30 +186,13 @@
                 #profile {
                     margin: 2% 0;
                 }
-
-                h1 {
-                    font-size: 5vw!important;
-                }
-                h2 {
-                    font-size: 3.5vw!important;
-                }
-                h3 {
-                    font-size: 3vw!important;
-                    justify-content: center;
-                    padding: 0 1rem !important;
-                }
-                p {
-                    font-size: 3vw!important;
-                }
-                i {
-                    font-size: 4vw !important;
-                    padding: 0 .1 !important;
-                }
-
             }
             &#projects, &#contact {
                 h1 {
                     font-size: 7vw !important;
+                }
+                p {
+                    font-size: 3vw !important;
                 }
             }
 
@@ -244,6 +227,23 @@
             width: 6rem !important;
             padding: 10px !important;
         }
+        h1 {
+            font-size: 5vw !important;
+        }
+        h2 {
+            font-size: 3.5vw !important;
+        }
+        h3 {
+            font-size: 3vw !important;
+            justify-content: center;
+            padding: 0 1rem !important;
+        }
+        p {
+            font-size: 3vw !important;
+        }
+        i {
+            font-size: 4vw !important;
+            padding: 0 .1 !important;
+        }
     }
-
 }
