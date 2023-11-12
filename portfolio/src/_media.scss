@@ -5,15 +5,15 @@
             display: block !important;
 
             &__line {
-                animation: closedMid 0.8s backwards;
+                animation: closedMid 0.4s backwards;
                 animation-direction: reverse;
 
                 &::before {
-                    animation: closedTop 0.8s backwards;
+                    animation: closedTop 0.4s backwards;
                     animation-direction: reverse;
                 }
                 &::after {
-                    animation: closedBtm 0.8s backwards;
+                    animation: closedBtm 0.4s backwards;
                     animation-direction: reverse;
                 }
             }
@@ -33,24 +33,24 @@
             font-size: 1.6rem;
             color: #fff;
             background: #7f4c9c;
-            transition: background 0.2s ease-in-out;
-            border-radius: 0 0 0 40%;
-            transition: 0.5s;
+            transition: 0.4s;
+            border-radius: 0 0 0 20%;
+            // transition: 0.5s;
         }
 
         // When hamburger menu icon is clicked
         .menu-btn:checked ~ .menu-icon {
             border-radius: 50%;
-            // animation: pulse .5s;
+            // animation: pulse .6s;
 
             .menu-icon__line {
-                animation: openMid 0.5s forwards;
+                animation: openMid 0.4s forwards;
 
                 &::before {
-                    animation: openTop 0.5s forwards;
+                    animation: openTop 0.4s forwards;
                 }
                 &::after {
-                    animation: openBtm 0.5s forwards;
+                    animation: openBtm 0.4s forwards;
                 }
             }
         }
@@ -75,6 +75,7 @@
     }
 
     body {
+        // transition: background 0.2s ease-in-out;
             section {
                 &#about{
                     #main {
