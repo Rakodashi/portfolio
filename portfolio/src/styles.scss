@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap");
+@import 'media';
+@import 'buttons';
+@import 'animations';
+
+* {
+    box-sizing: border-box;
+    font-family: 'prompt', sans-serif;
+    place-self: center;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(ellipse at bottom, #673de6 0%, #090a0f 100%);
+    transition: background 0.2s ease-in-out;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    header {
+        background-color: #7f4c9c;
+        position: sticky;
+        top: 0;
+        font-weight: 600;
+        font-size: 2rem;
+        width: 100vw;
+        height: 5rem;
+        z-index: 2;
+        display: inline-flex;
+        transition: background 0.4s;
+        
+        & #homeBtn {
+            display: inline-flex;
+            height: 5rem;
+                
+            & .logo {
+                width: 90px;
+            }
+        }
+        
+        & ul {
+            display: inline-flex;
+            list-style: none;
+            gap: 1rem;
+
+            &#centerBtns {
+                margin: auto;
+                padding: 0 0 0 5%;
+            }
+            &#rightBtns {
+                margin: 0 1% 0 0;
+                padding: 0;
+            }
+        }
+
+        .hamburgerMenu {
+            display: none;
+        }
+            
+        & button {
+            display: inline-flex;
+            margin: 10px auto;
+            max-width: 60px;
+            border: 1px solid #dea7ff;
+        
+                &:hover {
+                    background-color: #dea7ff;
+                }
+                &#github:hover  {
+                    background-color: #161b22;
+                    border:#161b22;
+                }
+                &#linkedin:hover  {
+                    background-color: #0077b5;
+                    border:#0077b5;
+                }
+                &#codepen:hover  {
+                    background-color: #1e1f26;
+                    border:#1e1f26;
+                }
+                &#artstation:hover  {
+                    background-color: #13aff0;
+                    border:#13aff0;
+                }
+                    
+            }
+        a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.1s ease-in-out;
+            
+            &:hover {
+                color: #dea7ff;
+            }
+        }
+        .menu-icon {
+            position: relative;
+            padding: 26px 10px;
+            cursor: pointer;
+            z-index: 2;
+            margin: 0 1% 0 auto;
+            display: none; //activate and deactivate it manually
+
+            &__line {
+                display: block;
+                position: relative;
+                background: #fff;
+                height: 4px;
+                width: 40px;
+                border-radius: 4px;
+                transition: background .8s ease;
+
+                &::before, &::after {
+                    content: "";
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 4px;
+                    background: #fff;
+                    transition: background .8s ease;
+                }
+                &::before {
+                    transform: translateY(-10px);
+                }
+                &::after {
+                    transform: translateY(10px);
+                }
+            }
+        }
+        .menu-btn {
+            display: none;
+        }
+    }
+
+    section {
+        display: flex;
+        background-color: #1f1f41ad;
+        border-radius: 20px;
+        margin:3%;
+        padding:2vw;
+        width: 95%;
+        flex-direction: column;
+        transition: background 0.2s ease-in-out;
+
+        #about {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 2% 0;
+
+             h3 {
+                 width: 80%;
+             }
+        }
+           
+        #main {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 90%;
+    
+            &.main-titles, h1, h2 {
+                display: flex;
+                margin: .5rem;
+            }   
+        }
+        
+        #profile {
+            width: 10vw;
+            border-radius: 360px;
+            z-index: 1;
+            margin: 0 3% 0 0;
+        }
+         .skills {
+             justify-content: center;
+             display: inline-block;
+             margin: 2% 0 2% 0;
+         }
+        i {
+            font-size: 3vw;
+            margin: 2rem 0 1rem 0;
+            padding: .6rem;
+            transition: color 0.1s ease-in-out;
+
+            &.devicon-git-plain:hover {
+                color: #f34f29;
+            }
+            &.devicon-html5-plain:hover {
+                color: #e54d26;
+            }
+            &.devicon-css3-plain:hover {
+                color: #3d8fc6;
+            }
+            &.devicon-javascript-plain:hover {
+                color: #f0db4f;
+            }
+            &.devicon-python-plain:hover {
+                color: #ffd845;
+            }
+            &.devicon-sass-original:hover {
+                color: #c17097;
+            }
+            &.devicon-typescript-plain:hover {
+                color: #007acc;
+            }
+            &.devicon-react-original:hover {
+                color: #61dafb;
+            }
+            &.devicon-django-plain:hover {
+                color: #136346;
+            }
+            &.devicon-mysql-plain:hover {
+                color: #1b8699;
+            }
+            &.devicon-c-plain:hover {
+                color: #03599c;
+            }
+            &.devicon-illustrator-plain:hover {
+                color: #faa625;
+            }
+            &.devicon-photoshop-plain:hover {
+                color: #80b5e2;
+            }
+            &.devicon-blender-original:hover {
+                color: #dc7b2e;
+            }
+            &.devicon-vscode-plain:hover {
+                color: #3c99d4;
+            }
+            &.devicon-figma-plain:hover {
+                color: #f24e1e;
+            }
+            &.devicon-bootstrap-plain:hover {
+                color: #684a94;
+            }
+        }
+
+        hr {
+            color: #fff;
+        }
+
+        .cardText, .textCard {
+            display: flex;
+            flex-direction: row;
+            margin: 4rem 0 8rem 0;
+            z-index: 1;
+
+            h2 {
+                display: flex;
+                justify-content: center;
+                text-transform: uppercase;
+            }
+            h3 {
+                padding: 1rem;
+            }
+
+            img {
+                max-width: 40vw;
+            }
+
+            .projBtns {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+                .lBtn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 30px 0 0 30px;
+                    margin: 0 .1rem 0 0;
+                    width: 40%;
+                    text-transform: uppercase;
+                    background-color: #7f4c9c;
+                    padding: .6rem;
+                    font-size: 1.5rem;
+                    cursor: pointer;
+                    transition: background 0.2s ease-in-out;
+                    text-decoration: none;
+                    color: white;
+
+                    &:hover {
+                        background-color: #dea7ff;
+                    }
+                    &:active {
+                        background-color: #dea7ff;
+                    }
+                }
+                .rBtn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 0 30px 30px 0;
+                    margin: 0 0 0 .1rem;
+                    width: 40%;
+                    text-transform: uppercase;
+                    background-color: #7f4c9c;
+                    padding: .6rem;
+                    font-size: 1.5rem;
+                    cursor: pointer;
+                    transition: background 0.2s ease-in-out;
+                    text-decoration: none;
+                    color: white;
+
+                    &:hover {
+                        background-color: #dea7ff;
+                    }
+                    &:active {
+                        background-color: #dea7ff;
+                    }
+
+                }
+            }
+
+            .cardInfo {
+                padding: 1rem;
+                margin: 1rem;
+            }
+        }
+
+    form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    input,
+    textarea {
+        padding: 1.4rem;
+        background: #1b2735;
+        color: white;
+        border: 1px solid #1d1124;
+        display: flex;
+        width: 60%;
+        margin: .5rem 0;
+
+        &::placeholder {
+            font-size: 1.2rem;
+            color: #bdbdbd;
+        }
+    }
+    textarea {
+        height: 10rem;
+    }
+}
+
+    button {
+        display: flex;
+        padding: 15px;
+        border: none;
+        border-radius: 30px;
+        font-size: 1.2rem;
+        margin: 20px auto 0;
+        width: 8rem;
+        cursor: pointer;
+        background: #7f4c9c;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        transition: background 0.2s ease-in-out;
+
+        &:hover {
+            background-color: #dea7ff;
+        }
+        &:active {
+            background-color: #dea7ff;
+        }
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    h2 {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    h3 {
+        font-size: 1.4rem;
+        padding: 0 10rem;
+    }
+    p {
+        font-size: 1.4rem;
+    }
+
+    footer {
+        background: #27394e;
+        text-align: center;
+        padding: .5%;
+        transition: background 0.2s ease-in-out;
+    }
+}
