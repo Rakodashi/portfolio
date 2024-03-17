@@ -1,0 +1,33 @@
+{
+  "translation": {
+      "About": "About",
+      "Projects": "Projects",
+      "Contact": "Contact",
+      "Language": "Language",
+      "Theme": "Theme",
+
+      "Rakodashi | Home Button":"Rakodashi | Home Button",
+      "Github Button": "Github Button",
+      "LinkedIn Button": "LinkedIn Button",
+      "CodePen Button": "CodePen Button",
+      "ArtStation Button": "ArtStation Button",
+      "Change language Pt-Br | En":"Change language Pt-Br | En",
+      "Theme Button":"Theme Button",
+
+      "Front-End Web Developer & Graphic Designer": "Front-End Web Developer & Graphic Designer",
+      "Hey there, I'm Rafa! I'm a Front-End Developer, graduated in Graphic Design and also have some knowledge on 3DCG and can speak portuguese, english, and japanese.": "Hey there, I'm Rafa! I'm a Front-End Developer, graduated in Graphic Design and also have some knowledge on 3DCG and can speak portuguese, english, and japanese.",
+      "I have a year of experience building Front-End projects, and I'm also studying Web Development and Computer Science with Harvard's CS50w & CS50x Online Courses, I've done a 10-day Intensive coding course at Alura and a Front-end course at Santander Coders, and I'm now focusing on learning more about Back-End to complement my knowledge in the MERN stack and React, and polishing my skills by doing projects like this very site!": "I have a year of experience building Front-End projects, and I'm also studying Web Development and Computer Science with Harvard's CS50w & CS50x Online Courses, I've done a 10-day Intensive coding course at Alura and a Front-end course at Santander Coders, and I'm now focusing on learning more about Back-End to complement my knowledge in the MERN stack and React, and polishing my skills by doing projects like this very site!",
+
+      "Code": "Code",
+      "Technologies used": "Technologies used",
+      "A fictional app UI with a main page, an entity registry page, a see registered entities page and a register new operation field page.": "A fictional app UI with a main page, an entity registry page, a see registered entities page and a register new operation field page.",
+      "Currency Converter": "Currency Converter",
+      "A currency converter made as the first project in the 10-day Intensive at Alura.": "A currency converter made as the first project in the 10-day Intensive at Alura.",
+      "A google clone website that reproduces the main page, the Google Images page, the Advanced Search page and a semi-functional login page.": "A google clone website that reproduces the main page, the Google Images page, the Advanced Search page and a semi-functional login page.",
+
+      "Contact Me": "Contact Me",
+      "Name": "Name",
+      "Message":"Message",
+      "Send": "Send"
+  }
+}
